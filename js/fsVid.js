@@ -1,0 +1,3 @@
+$.fn.fsVid = function() {
+  
+};
