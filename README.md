@@ -1,1 +1,1 @@
-#fsVid - a jQuery plugin for full screen background videos
+#fsVid - A simple jQuery plugin for full screen background videos
