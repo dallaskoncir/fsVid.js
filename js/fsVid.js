@@ -4,18 +4,16 @@ $.fn.fsVid = function(options) {
   // Store generated poster image as a variable
   var pop = Popcorn('video'), poster;
 
-  pop.capture({
-    at: 1
-  });
+  poster = pop.currentTime(1).capture();
 
-  console.log(pop);
+  //console.log(poster);
 
   // Set defaults
   var settings = $.extend({
     autoplay: true,
     loop: true,
     muted: true,
-    poster: pop
+    poster: poster
   }, options);
 
   // Apply attributes to selected element
