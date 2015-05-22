@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>fsVid Demo Page</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -21,11 +22,11 @@
       <h1>fsVid.js</h1>
       <h2>A simple jQuery plugin for full screen background videos with automatically generated poster images.</h2>
 
-      <div class="arrows animated bounce infinite">
-        <a href="#use">
-          <i class="fa fa-angle-down"></i>
-          <i class="fa fa-angle-down"></i>
-        </a>
+      <div class="buttons">
+        <ul>
+          <li><a href="https://github.com/dallaskoncir/fsVid.js" target="_blank">Download</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
       </div>
     </header>
     
@@ -34,16 +35,16 @@
   <section id="usage" class="usage">
     <div class="container">
       <h3>What is fsVid.js?</h3>
-      <p>fsVid.js is a super lightweight jQuery plugin that will allow you to add a full screen video background to your site easily. Alright, great but why should I use this instead of any of the other plugins out there? On top of the fact that it is lightweight and responsive, I added a little trick that will take the first frame of your video (or any other frame you want) and use that as the poster image. No screenshots! No Extra set up!</p>
+      <p>fsVid.js is a super lightweight jQuery plugin that will allow you to add a full screen video background to your site easily. <strong>Alright, great but why should I use this instead of any of the other plugins out there?</strong> On top of the fact that it is lightweight and responsive, I added a little trick that will take the first frame of your video and use that as the poster image. No screenshots! No Extra set up!</p>
 
       <h3>How to use fsVid.js</h3>
       <div class="step cf">
         <span class="num">1</span>
-        <p>Grab the project from <a href="#" target="_blank">Github</a>.</p>
+        <p>Grab the project from <a href="https://github.com/dallaskoncir/fsVid.js" target="_blank">Github</a>.</p>
       </div>
       <div class="step cf">
         <span class="num">2</span>
-        <p>If you haven't already, grab a copy of <a href="#">jQuery</a> and link that in your html document. Otherwise skip to step 3.</p>
+        <p>If you haven't already, grab a copy of <a href="http://jquery.com/download/" target="_blank">jQuery</a> and link that in your html document. Otherwise skip to step 3.</p>
       </div>
       <div class="step cf">
         <span class="num">3</span>
@@ -55,9 +56,45 @@
       </div>
       <div class="step cf">
         <span class="num">5</span>
+        <p>In your custom javascript file, call the plugin:</p>
+        <pre>$(function() {<br /><span class="tab">$('video').fsVid();</span><br />});</pre>
+      </div>
+      <div class="step cf">
+        <span class="num">6</span>
         <p>Add your html markup, here is an example:</p>
         <pre><span><</span><span>section</span> <span>class=</span><span>"video"</span><span>></span><br /><span class="tab"><</span><span>video></span><br /><span class="tab2"><</span><span>source </span><span>src="your-video.webm" type="video/webm"></span><br /><span class="tab2"><</span><span>source </span><span>src="your-video.mp4" type="video/mp4"></span><br /><span class="tab"><</span><span>/video></span><br /><span><</span><span>/section></span></pre>
       </div>
+
+      <h4>That's it! Now you have a full screen background video for your website!</h4>
+    </div>
+  </section>
+
+  <section class="options">
+    <div class="container">
+      <h3>Options</h3>
+      <p>Here are the available options for fsVid.js <strong>(default options are in bold)</strong>:</p>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Options</th>
+        </tr>
+        <tr>
+          <td>autoplay</td>
+          <td><strong>true</strong>, false</td>
+        </tr>
+        <tr>
+          <td>loop</td>
+          <td><strong>true</strong>, false</td>
+        </tr>
+        <tr>
+          <td>muted</td>
+          <td><strong>true</strong>, false</td>
+        </tr>
+        <tr>
+          <td>loop</td>
+          <td><strong>true</strong>, false</td>
+        </tr>
+      </table>
     </div>
   </section>
   
