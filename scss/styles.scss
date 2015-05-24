@@ -101,15 +101,20 @@ strong {
         width: 160px;
         background: white;
         color: #333333;
-        border: 2px solid white;
         padding: 20px;
         font-size: 1.5rem;
         margin-right: 1rem;
         border-radius: 4px;
         box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        transition: opacity 0.2s;
+        transition: all 0.2s;
         &:hover {
-          opacity: 0.9;
+          background: #333333;
+          color: white;
+        }
+        @media (max-width: 1024px) {
+          border: 2px solid #333333;
+          box-shadow: none;
+          text-align: center;
         }
       }
     }
@@ -200,4 +205,11 @@ table {
   td {
     padding: 5px 60px;
   }
+}
+
+.gh-buttons {
+  position: relative;
+  bottom: -350px;
+  background: white; 
+  padding: 0.5rem 0 1rem;
 }
