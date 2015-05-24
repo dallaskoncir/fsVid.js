@@ -1,3 +1,0 @@
-$(function() {
-  $('video').fsVid();
-});
