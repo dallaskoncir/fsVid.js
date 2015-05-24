@@ -77,7 +77,7 @@ strong {
   padding: 1rem;
   text-align: center;
   position: relative;
-  top: 30vh;
+  top: 20vh;
   @media (min-width: 1600px) {
     top: 15vh;
   }
@@ -121,6 +121,22 @@ strong {
   }
 }
 
+.arrows {
+  width: 100%;
+  position: absolute;
+  bottom: -275px;
+  text-align: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  i {
+    display: block;
+    font-size: 2.5rem;
+    line-height: 0.5;
+  }
+}
+
 .usage, .options {
   background: white;
   color: #333;
@@ -129,7 +145,7 @@ strong {
 }
 
 .usage {
-  bottom: -370px;
+  bottom: -350px;
   padding: 2rem 0 2rem;
   @media (max-width: 1024px) {
     bottom: 0;
