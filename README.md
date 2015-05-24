@@ -20,3 +20,9 @@ fsVid.js is a super lightweight jQuery plugin that will allow you to add a full 
 ##Options
 
 Here are the available options for fsVid.js **(default options are in bold)**:
+
+| Name          | Options      |
+| ------------- | ------------ |
+| autoplay  | **true**, false  |
+| loop      | **true**, false  |
+| muted     | **true**, false  |
