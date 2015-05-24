@@ -6,6 +6,8 @@ fsVid.js is a super lightweight jQuery plugin that will allow you to add a full 
 
 ##How to use fsVid.js
 
+See the live demo here: http://dallaskoncir.github.io/fsVid.js/
+
 1.  Clone the repo or download the zip file.
 2.  If you haven't already, grab a copy of jQuery and link that in your html document. Otherwise skip to step 3.
 3.  Link popcorn.js, popcorn.capture.js and fsVid.min.js in your html document. Be sure to load them after jQuery and in that order.
